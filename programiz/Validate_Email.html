@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Email</title>
+</head>
+<body>
+    <script>
+        let email = prompt("Enter the Email :")
+        const regex_pattern =  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+        if(regex_pattern.test(email)){
+            document.write(`The ${email} is valid`)
+        }
+        else{
+            document.write(`The ${email} is not alid`)
+        }
+
+    </script>
+</body>
+</html>

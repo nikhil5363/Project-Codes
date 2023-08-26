@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Recursion</title>
+</head>
+
+<body>
+    <script>
+        // Palindrome 
+        // Recursion Way
+        function checkpalindrom(str) {
+            if (str.length === 1) {
+                return true
+            }
+            if (str.length === 2) {
+                return str[0] == -str[1]
+            }
+            if(str[0]===str.slice(-1)){
+                return checkpalindrom(str.slice(1,-1))
+
+            }
+            return false
+        }
+        document.write(checkpalindrom('NITIN'))
+        document.write('<br>')
+        document.write(checkpalindrom('NIKHIL'))
+    </script>
+</body>
+
+</html>

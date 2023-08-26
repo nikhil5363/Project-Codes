@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop in Objects</title>
+</head>
+
+<body>
+    <script>
+        //Example 1: Loop Through Object Using for...in
+        //const student = {
+        //     name: 'John',
+        //     age: 20,
+        //     hobbies: ['reading', 'games', 'coding'],
+        // };
+        // for (let i in student) {
+        //     console.log("The Key is "+ i + "The Value is " + student[i]);
+        // }
+
+
+        const nikhil = { age: 35, address: 'Marathahalli', profession: 'MERN Stack Developer' };
+        // const ayushi = {gender :'Female'}
+        // const ramesh = {village:'Gorantla'}
+        // ayushi.__proto__= ramesh;
+        // nikhil.__proto__ = ayushi
+
+        // for(let i in nikhil){
+        //     document.write("The Key is "+ i + "The Value is " + nikhil[i] + "<br>")
+        // }
+
+
+        // for (let [i, j] of Object.entries(nikhil)) {
+        //     console.log("The value of i is " + i + "The value of j is " + j)
+        //     document.write("The value of i" + i + "The value of j" + j +"<br>")
+        // }
+            console.log(Object.entries(nikhil))
+        
+
+    </script>
+</body>
+
+</html>

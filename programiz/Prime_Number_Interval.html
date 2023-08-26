@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Between Interval</title>
+</head>
+<body>
+    <script>
+
+<script>
+
+// JavaScript program to find the prime numbers
+// between a given interval
+
+// driver code
+	// Declare the variables
+	let a, b, i, j;
+
+	// Ask user to enter lower value of interval and take input
+	a = window.prompt("Enter lower bound of the interval: ");
+
+	// Ask user to enter upper value of interval and take input
+	b = window.prompt("Enter upper bound of the interval: ");
+
+	// Print display message
+	console.log("Prime numbers between " + a + " and " + b << " are: ");
+
+	// Explicitly handling the cases when a is less than 2
+	// since 0 and 1 are not prime numbers
+	if (a <= 2)
+	{
+		a = 2;
+		if (b >= 2)
+		{
+			document.write(a," ");
+			a++;
+		}
+	}
+
+	// MAKING SURE THAT a IS ODD BEFORE WE BEGIN
+	// THE LOOP
+	if (a % 2 == 0)
+		a++;
+
+	// NOTE : WE TRAVERSE THROUGH ODD NUMBERS ONLY
+	for (i = a; i <= b; i = i + 2) {
+
+		// flag variable to tell
+		// if i is prime or not
+		let flag = 1;
+
+		// WE TRAVERSE TILL SQUARE ROOT OF j only.
+		// (LARGEST POSSIBLE VALUE OF A PRIME FACTOR)
+		for (j = 2; j * j <= i; ++j) {
+			if (i % j == 0) {
+				flag = 0;
+				break;
+			}
+		}
+
+		// flag = 1 means i is prime
+		// and flag = 0 means i is not prime
+	
+		if (flag == 1){
+		if(i == 1) continue;
+		else
+			document.write(i, " ");
+		}
+	}
+
+// This code is contributed by shinjanpatra
+</script>
+
+    </script>
+</body>
+</html>

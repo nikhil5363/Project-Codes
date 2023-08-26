@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEY IN OBJECT</title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            id: 1,
+            name: 'John',
+            age: 23
+        }
+        // const haskey = 'name' in person;
+        // if(haskey){
+        //     document.write('The key exists.')
+        // }
+        // else{
+        //     document.write('The key does not exist.')
+        // }
+
+        const h = person.hasOwnProperty('name');
+        if (h) {
+            document.write('The key exists.')
+        }
+        else {
+            document.write('The key does not exist.')
+        }
+    </script>
+</body>
+
+</html>

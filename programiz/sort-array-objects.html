@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sort-array-objects</title>
+</head>
+
+<body>
+    <script>
+        //sort-array-objects
+        //Example 1: Sort Array by Property Name
+        const students = [{name:'Zara',age:21},{ name: 'Sara', age: 24 }, { name: 'John', age: 24 }, { name: 'Jack', age: 25 }];
+        function compareName(a, b) {
+            const name1 = a.name.toUpperCase();
+            const name2 = b.name.toUpperCase();
+            //let comparison = 0;
+            if (name1 > name2) {
+                //comparison = 1;
+                return 1
+            } else {
+                //comparison = -1
+                return -1
+            }
+            return comparison
+        }
+        console.log(students.sort(compareName))
+    </script>
+</body>
+
+</html>

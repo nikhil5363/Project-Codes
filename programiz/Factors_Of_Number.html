@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factors Of Number</title>
+</head>
+<body>
+    <script>
+            // program to find the factors of an integer
+
+            // take input
+            const num = prompt('Enter a positive number: ');
+            document.write(`The factors of ${num} is: ` );
+            document.write("<br>")
+            for(let i=1;i<=num ;i++){
+                if(num%i ==0){
+                    document.write(i + "<br>")
+                }
+            }
+    </script>
+</body>
+</html>

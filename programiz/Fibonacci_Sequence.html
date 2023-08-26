@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Sequence</title>
+</head>
+<body>
+    <script>
+        // Fibonacci Sequence
+        // Through Iterative
+        let a  = 0;
+        let b = 1;
+        let n = prompt("Enter the nth number:")
+        for(i=0;i<=n;i++){
+            document.write(a + "<br>")
+            let c= a+b;
+            a=b;
+            b=c;
+        }
+
+        // Through Recursion 
+        function fibonacci(n){
+            if(n<2){
+                return n
+            }else{
+                return fibonacci(n-1) + fibonacci(n-2)
+            }
+        }
+        document.write(fibonacci(6))
+        if(n<1){
+            document.write("Number is less than 1")
+        }
+        if(n>1){
+            for(let i=0 ; i<n ; i++){
+                document.write(fibonacci(i)+"<br>")
+            }
+        }
+
+    </script>
+</body>
+</html>

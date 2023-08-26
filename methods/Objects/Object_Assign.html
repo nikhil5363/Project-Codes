@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Assign</title>
+</head>
+
+<body>
+    <script>
+        const object1 = { a: 1, b: 2, c: 3 };
+        const object3 = { g: 1, h: 2, i: 3 };
+        const object2 = Object.assign({ c: 4, d: 5 }, object1)
+        console.log(object2)
+        const object4 = Object.assign({g:34,h:25},object3);
+        console.log(object4)
+        const object5 = Object.assign({},object1)
+        console.log(object5)
+    </script>
+
+</body>
+
+</html>

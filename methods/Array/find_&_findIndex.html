@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Index</title>
+</head>
+<body>
+    <script>
+        const ages = [3, 10, 18, 20];
+        let a = ages.findIndex((val,i)=>{ // -1 If not available
+            return val ===18
+        })
+        console.log(a)
+        
+        let b = ages.find((val,i)=>{  // udefined of not avalalle
+            return val===18
+        })
+        console.log(b)
+    </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array Iteration</title>
+</head>
+<body>
+    <script>
+        //JavaScript Array forEach()
+        //forEach : The forEach() method calls a function (a callback function) once for each array element.
+        // const numbers = [45, 4, 9, 16, 25];
+        // numbers.forEach((val,i)=>{
+        //     console.log(i,val)
+        // })
+        // console.log(numbers)
+
+
+        //******************************************************************************
+
+        // Map Method
+        //1.The map() method creates a new array by performing a function on each array element.
+        //2.The map() method does not change the original array.
+        //3.The map() method does not execute the function for array elements without values.     
+        // const numbers1 = [45, 4, 9, 16, 25];
+        // const numbers2 = numbers1.map((val,i)=>{
+        //     return Math.pow(val,2)
+        //     return val *2
+        // })
+        // console.log(numbers2)
+
+          //******************************************************************************
+        
+        //JavaScript Array flatMap()
+        // const myArr = [1, 2, 3, 4, 5, 6];
+        // const newarr = myArr.flatMap((i)=>i*2)
+        // console.log(newarr)
+
+          //******************************************************************************
+
+        //JavaScript Array filter()
+        // const numbers = [45, 4, 9, 16, 25];
+        // const over18 = numbers.filter(i=> i <=18)
+        // console.log(over18)
+
+
+        //******************************************************************************
+        //JavaScript Array reduce()
+        //1. The reduce() method runs a function on each array element to produce (reduce it to) a single value.
+        //2.The reduce() method works from left-to-right in the array. See also reduceRight().
+        // const numbers = [45, 4, 9, 16, 25];
+        // let s = numbers.reduce((t,val,i)=>{
+        //     //let t = 0;
+        //     return t+ val
+        // })
+        // console.log(s)
+
+        //JavaScript Array reduceRight()
+        //1.The reduceRight() method runs a function on each array element to produce (reduce it to) a single value.
+        //2.The reduceRight() works from right-to-left in the array. See also reduce().
+        // const numbers = [45, 4, 9, 16, 25];
+        // let ss= numbers.reduceRight((t,val,i)=>{
+        //     return val + t 
+        // })
+        // console.log(ss)
+
+        //JavaScript Array every()
+        //The every() method checks if all array values pass a test.
+        //This example checks if all array values are larger than 18:
+        //const numbers = [45, 4, 9, 16, 25];
+        // If all the values are passed thc ondition then only true will be returned
+        // const numbers = [45, 74, 19, 116, 25];
+        // let every18 = numbers.every((val,i)=>{
+        //     return val > 18
+        // })
+        // console.log(every18)
+
+        //JavaScript Array some()
+        //1. The some() method checks if some array values pass a test.
+        // const numbers = [45, 4, 9, 16, 25];
+        // let some18 = numbers.some((val,i)=>{
+        //     return val < 1
+        // })
+        // console.log(some18)
+
+        //JavaScript Array indexOf()
+        //The indexOf() method searches an array for an element value and returns its position.
+        // const fruits = ["Apple", "Orange", "Apple", "Mango"];
+        // let position = fruits.indexOf("Apple",1);
+        // console.log(position)
+
+         //JavaScript Array lastIndexOf()
+         //Array.lastIndexOf() is the same as Array.indexOf(),
+         // but returns the position of the last occurrence of the specified element.
+        //  const fruits = ["Apple", "Orange","Mango", "Apple", "Mango"];
+        //  let position = fruits.lastIndexOf('Mango')
+        //  console.log(position)   
+
+
+        // JavaScript Array find()
+        // Find : The find() method returns the value of the first array element that passes a test function.
+        // const numbers = [4, 9, 16, 25, 29];
+        // let f = numbers.find((val,i)=>{
+        //     return val > 18 
+        // })
+        // console.log(f)
+        
+
+        // JavaScript Array findIndex()
+        // findIndex : The findIndex() method returns the index of the first array element that passes a test function.
+        // const numbers = [4, 9, 16, 25, 29];
+        // let firstindex = numbers.findIndex((val,i)=>{
+        //     return val >25
+        // })
+        // console.log(firstindex)
+
+        // JavaScript Array.from()
+        //Array .From ; The Array.from() method returns an Array object from any object
+        // with a length property or any iterable object.
+        // const myArr = Array.from("ABCDEFG")
+        // console.log(myArr)
+
+        // JavaScript Array Keys()
+        //The Array.keys() method returns an Array Iterator object with the keys of an array.
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // const keys = fruits.keys();
+        // console.log(keys)
+        // const values = fruits.values();
+        // console.log(values)
+        // for(let i of keys){
+        //     //text += x + "<br>"
+        //     console.log(i)
+        // }
+        // for(let i of values){
+        //     console.log(i)
+        // }
+
+
+        //JavaScript Array entries()
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // const f = fruits.entries();
+        // console.log(f)
+        // for(let i of f){
+        //     console.log(i)
+        // }
+
+        // JavaScript Array includes()
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // let a= fruits.includes("Mango"); // is true
+        // console.log(a)
+
+
+    </script>
+</body>
+</html>

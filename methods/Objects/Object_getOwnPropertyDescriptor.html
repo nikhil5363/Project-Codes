@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object getOwnPropertyDescriptor</title>
+</head>
+<body>
+    <script>
+        const obj1 = {name:'Nikhil',age:35};
+        const objgetownprop = Object.getOwnPropertyDescriptor(obj1,'name');
+        console.log(objgetownprop.enumerable)
+        console.log(objgetownprop.value)
+
+    </script>
+</body>
+</html>

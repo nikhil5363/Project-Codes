@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Specific Item from an Array</title>
+</head>
+<body>
+    <script>
+        const arr = ['Nikhil','Kumar','Mahto','Madhusmita','Ayushi','Mina'];
+        const item= prompt("Enter the Item to be searched:")
+
+        const indexx = arr.indexOf(item)
+
+        arr.splice(indexx,1)
+
+        console.log(arr)
+    </script>
+</body>
+</html>

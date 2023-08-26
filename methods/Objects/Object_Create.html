@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Create</title>
+</head>
+
+<body>
+    <script>
+        // let Student = {
+        //     name: "Lisa",
+        //     age: 24,
+        //     marks: 78.9,
+        //     display() {
+        //         console.log("Name:", this.name);
+        //     }
+        // };
+        // let newobject = Object.create(Student);
+
+        // newobject.name ='Lisa Ray';
+        // newobject.display()
+        // console.log(newobject)
+
+        let o = {name:'Nikhil',age:35,address:'BTM'}
+        // console.log(o)
+        // delete o.name
+        // console.log(o)
+
+        let a= Object.create(o)
+        console.log(a)
+        delete a.name
+        console.log(a)
+
+        
+
+
+    </script>
+</body>
+
+</html>

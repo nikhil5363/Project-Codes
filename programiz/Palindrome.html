@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+
+<body>
+    <script>
+        // Palindrome 
+        // Iterative Way
+        const str = prompt("Enter the String:")
+        // function palindrome(str) {
+        //     const len = str.length - 1;
+        //     let s = '';
+        //     for (let i = len; i >= 0; i--) {
+        //         s += str[i] 
+        //     }
+        //     if (str === s) {
+        //         document.write(str + "<br>");
+        //         document.write(s + "<br>");
+        //         document.write("Its a Palidrome")
+        //     }
+        //     else {
+        //         document.write(str + "<br>");
+        //         document.write(s+ "<br>");
+        //         document.write("Its not a Palidrome")
+        //     }
+
+        // }
+        // palindrome(str)
+
+        let checkPalindrome = (str) =>{
+            return str === str.split("").reverse().join('')
+        }
+        document.write(checkPalindrome(str))
+    </script>
+</body>
+
+</html>

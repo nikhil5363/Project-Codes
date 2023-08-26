@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Match String</title>
+</head>
+<body>
+    <script>
+        //The search() method cannot take a second start position argument.
+        //The indexOf() method cannot take powerful search values (regular expressions).
+        let text = "Please locate where 'locate' occurs and locate other who are locate!";
+        document.write(text.search("locate"))
+        // document.write("<br>")
+        
+        //regexx= /locate/i
+        document.write(text.match('locate'))
+        //console.log(text.match('locate'))
+        //console.log(text.match(regexx))
+        
+        // const arr = text.matchAll('locate')
+        // console.log(typeof text.matchAll('locate'))
+        // console.log(Array.from(arr))
+        // console.log(text.matchAll('locate'))
+        // document.write(text.matchAll("locate"))
+
+
+        //console.log(text.matchAll(/locate/gi))
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLONE OBJECT</title>
+</head>
+
+<body>
+    <script>
+        // const person = {
+        //     name: 'John',
+        //     age: 21,
+        // }
+
+        // const copy = person;
+        // In the above program, the copy variable has the same value as the person object.
+        // However, if you change the value of the copy object,
+        //  the value in the person object will also change. For example
+        //copy.name = 'Peter';
+        // console.log(copy.name); // Peter
+        // console.log(person.name); // Peter
+
+        // copy.address='BTM'
+        // console.log(copy)
+        // console.log(person)
+
+        // const nikhil = { age: 35, address: 'Marathahalli' };
+
+        // const ayushi = nikhil;
+
+        // console.log('ayuhsi -->>', ayushi)
+
+        // console.log('nikhil -->>', nikhil)
+
+        // nikhil.address = 'BTM 1 St STage KEB Layout';
+
+        // ayushi.age = 32
+        // ayushi.profession = 'Techie';
+        // console.log('ayuhsi -->>', ayushi)
+        // console.log('nikhil -->>', nikhil)
+
+        //Example 1. Clone the Object Using Object.assign()
+        // if u change in any object it willnot make change in other object
+        // Deep Copy Method
+
+        //  const nikhil = { age: 35, address: 'Marathahalli', marks: { math: 66, english: 73}  };
+        //  const ayushi = Object.assign({}, nikhil)
+        //    console.log('ayuhsi -->>', ayushi) // same value
+        //    console.log('nikhil -->>', nikhil) // same value
+        // nikhil.address = 'BTM 1 St STage KEB Layout';
+        // nikhil.age = 7777
+        // //ayushi.age = 3333333333333
+        // ayushi.profession = 'Techie';
+        // ayushi.married='Yes';
+        // ayushi.address ='MG ROAD';
+        // ayushi.marks.history = 989898
+        // nikhil.marks.hindi= 333
+        // console.log('ayuhsi -->>', ayushi)
+        // console.log('nikhil -->>', nikhil)
+
+        // Example 2: Clone the Object Using Spread Syntax
+        // Top level elements will not be change but inside elements will be changed
+        // const nikhil = { age: 35, address: 'Marathahalli' };
+        // const ayushi ={...nikhil}
+        // // console.log('ayuhsi -->>', ayushi) // same value
+        // // console.log('nikhil -->>', nikhil) // same value
+        // ayushi.age=777777777;
+        // ayushi.address='MG ROAD';
+        // ayushi.marriage='YES';
+        // nikhil.age=22;
+        // console.log('ayuhsi -->>', ayushi)
+        // console.log('nikhil -->>', nikhil)
+        // const nikhil = { age: 35, address: 'Marathahalli',marks: { math: 66, english: 73} };
+        // const ayushi ={...nikhil}
+        // ayushi.address='MG Road';
+        // ayushi.marks.math=100000000;
+        // ayushi.marks.english=9999999;
+        // nikhil.marks.history=888888888888888;
+        // console.log('ayuhsi -->>', ayushi)
+        // console.log('nikhil -->>', nikhil)
+
+        //Very Deep Method
+        const nikhil = { age: 35, address: 'Marathahalli', marks: { math: 66, english: 73 } };
+        const ayushi = JSON.parse(JSON.stringify(nikhil))
+        ayushi.marks.math = 100000000;
+        ayushi.marks.english = 9999999;
+        nikhil.marks.history = 888888888888888;
+        ayushi.address='MG ROAD'
+        nikhil.address='BTM'
+        console.log('ayuhsi -->>', ayushi)
+        console.log('nikhil -->>', nikhil)
+
+
+
+
+        //var student2 = JSON.parse(JSON.stringify(student1))
+
+
+
+    </script>
+</body>
+
+</html>

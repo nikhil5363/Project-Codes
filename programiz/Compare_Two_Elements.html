@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Two Arrays</title>
+</head>
+
+<body>
+    <script>
+        const array1 = [1, 3, 5, 8];
+        const array2 = [1, 3, 5, 8 , 9];
+
+        const r = JSON.stringify(array1) === JSON.stringify(array2)
+
+        if (r) {
+            console.log('The arrays have the same elements.');
+        }
+        else {
+            console.log('The arrays have different elements.');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Recursion</title>
+</head>
+<body>
+    <script>
+         let n = prompt("Enter the value of N")
+        function factorial(n){
+            if(n<0){
+                return "number has to be positive."
+            }
+            else if(n == 0 || n == 1){
+                return 1;
+            }
+            else{
+                return n * factorial(n-1)
+            }
+        }
+        document.write(factorial(n))
+    </script>
+</body>
+</html>
