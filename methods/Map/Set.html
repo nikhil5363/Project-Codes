@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+</head>
+<body>
+    <script>
+        const letter = new Set(['a','b','c']);
+        console.log(letter)
+        letter.add('a')
+        letter.add('b')
+        letter.add('d');
+        letter.add('e');
+        letter.add('f')
+        letter.add('f')
+        console.log(letter)
+        letter.add({name:'Nikhil'})
+        console.log(letter)
+        letter.add({name:'Nikhill'})
+        letter.add({name:'Nikhilll'})    
+        console.log(letter)
+    </script>
+    
+</body>
+</html>
