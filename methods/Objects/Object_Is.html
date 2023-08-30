@@ -9,9 +9,9 @@
     <script>
         const obj1 = {name:'Nikhil',age:35,address:'Marathahalli'};
         const obj2 = {name:'Nikhil',age:35,address:'Marathahalli'};
-        console.log(Object.is(obj1,obj2))
-        console.log(Object.seal(obj1))
-        console.log(obj1===obj2)
+        //console.log(Object.is(obj1,obj2)); // false
+        console.log(Object.seal(obj1)); // false
+        console.log(obj1===obj2);//  false
         console.log(JSON.stringify(obj1)===JSON.stringify(obj2))
     </script>
 </body>

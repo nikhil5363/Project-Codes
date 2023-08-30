@@ -30,7 +30,9 @@
 
         let a= Object.create(o) // create
         console.log(a)
-        delete a.name
+        delete a.__proto__.age 
+        console.log(a)
+        a.__proto__.name='Peteeerrrrrrrrrrrr'
         console.log(a)
 
         

@@ -7,17 +7,26 @@
 </head>
 <body>
     <script>
+        // Freeze will not allow to add ,delete and update 
         const obj1 = {name:'Nikhil',age:35};
         const obj2 = Object.freeze(obj1);
-        obj2.address ='BTM';
+        obj2.address ='BTMMMMM';
         obj2.name='Abhilasha';
+        obj2.age = 27;
+        console.log(obj2);
+        delete obj2.age
         console.log(obj2)
 
-        // const obj1 = {name:'Nikhil',age:35};
-        // const obj2 = Object.seal(obj1);
-        // obj2.address ='BTM';
-        // obj2.name='Abhilasha ';
-        // console.log(obj2)
+        console.log('***************************************************************************')
+        // Seal will not allow to add and delete But will Allow teh user to update the Properties
+        const obj11 = {name:'Nikhil',age:35};
+        const obj22 = Object.seal(obj11);
+        obj22.address ='NEW YORK CITY';
+        obj22.name='BRUCE WAYNE';
+        obj22.age=25;
+        console.log(obj22)
+        delete obj22.name
+        console.log(obj22)
 
 
     </script>

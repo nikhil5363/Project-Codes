@@ -9,8 +9,9 @@
     <script>
         const obj1 = {name:'Nikhil',age:35};
         const objgetownprop = Object.getOwnPropertyDescriptor(obj1,'name');
-        console.log(objgetownprop.enumerable)
-        console.log(objgetownprop.value)
+        console.log(objgetownprop.enumerable) // true
+        console.log(objgetownprop.value) // Nikhil
+        console.log(objgetownprop)
 
     </script>
 </body>
